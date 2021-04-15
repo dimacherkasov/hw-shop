@@ -10,7 +10,7 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 29px;
-    color: var(--dark-pink-color);
+    color: $dark-pink-color;
     text-transform: uppercase;
 
 }
@@ -75,8 +75,8 @@
 .registration__buttom {
     height: 50px;
     width: 167px;
-    background: var(--dark-pink-color);
-    color: var(--white-color);
+    background: $dark-pink-color;
+    color: $white-color;
     border: none;
     text-align: center;
     margin: 39px auto 96px;
