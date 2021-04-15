@@ -1,0 +1,35 @@
+:root {
+    --black-color: #222222;
+    --pink-color: #F1E4E6;
+    --dark-pink-color: #F16D7F;
+    --grey-color: #F8F8F8;
+    --white-color: #FBFBFB;
+
+
+
+
+}
+
+body {
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}

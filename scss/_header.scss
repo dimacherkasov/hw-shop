@@ -1,0 +1,46 @@
+.header {
+    background-color: var(--black-color);
+}
+
+.header__navigation {
+    position: absolute;
+    height: 765px;
+    width: 235px;
+    top: 75px;
+    right: 0;
+    background: white;
+    display: none;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__button {
+    background: transparent;
+    border: none;
+    margin: 0 33px 0 0;
+}
+
+.header__button:active .header__navigation {
+    display: block;
+}
+
+.header__button:hover .header__navigation {
+    display: block;
+}
+
+.header__navigation:hover {
+    display: block;
+}
+
+.header__person {
+    margin: 0 33px 0 0;
+}
