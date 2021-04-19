@@ -1,0 +1,71 @@
+.offer {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+
+    }
+
+    &__item {
+        width: 360px;
+        min-height: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 30px;
+        flex-direction: column;
+       
+        @include tablet {
+            width: 31%;
+            min-height: 168px;
+            margin: 0 0 19px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 247px;
+            margin: 0 0 32px;
+        }
+
+    }
+
+    &__item--women {
+        background-image: url("../img/offer-women.jpg");
+        background-size: cover;
+    }
+
+    &__item--men {
+        background-image: url("../img/offer-men.jpg");
+        background-size: cover;
+    }
+
+    &__item--kids {
+        background-image: url("../img/offer-kids.jpg");
+        background-size: cover;
+    }
+
+    &__item--accesories {
+        background-image: url("../img/offer-accesories.jpg");
+        background-size: cover;
+        width: 100%;
+        @include tablet {
+            min-height: 116px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $white-color;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 22px;
+        color: $dark-pink-color;
+        @include font(16px, 19px);
+    }
+}
