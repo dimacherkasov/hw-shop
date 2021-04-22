@@ -38,6 +38,11 @@ body{
     background-color: var(--black-color);
 }
 .header__navigation {
+    position:absolute;
+    width: 764px;
+    top: 75px;
+    right: 0;
+    background: white;
     display: none;
 }
 .header__container{
@@ -54,6 +59,17 @@ body{
     border: none;
     margin: 0 33px 0 0;
 }
+.header__button:active ~ .header__navigation{
+display: block;
+}
+.header__button:hover ~ .header__navigation {
+    display: block;
+    background: #E1E1E1;
+}
+.header__navigation:hover {
+    display: block;
+}
+
 .header__person{
     margin: 0 33px 0 0;
 }
@@ -157,10 +173,6 @@ margin: 6px auto 48px;
 color: #9F9F9F;
 }
 
-.product__button{
-    display: none;
-}
-
 .products__list{
     display: flex;
     justify-content: space-between;
@@ -170,10 +182,48 @@ color: #9F9F9F;
 .products__item{
     width: 360px;
     margin: auto auto 30px;
+    position: relative;
+    cursor: pointer;
 }
+
 .product__img{
+    object-fit: cover;
+    height: 420px;
+    width: 100%;
+}
+
+.product__img:hover ~ .product__item-hover{
     display: block;
 }
+
+.products__item:hover{
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.16);
+}
+.product__item-hover{
+    display: none;
+    height: 420px;
+    width: inherit;
+    position: absolute;
+    top: 0;
+    background-color: rgba(59, 59, 59, 0.65);
+}
+.product__item-hover:hover{        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__button{
+    display: flex;
+    height: 39px;
+    width: 123px;
+    border: 1px solid #FFFFFF;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(59, 59, 59, 0.65) ;
+    color: var(--white-color);
+}
+
 .product__discription{
     background: var(--grey-color);
     padding: 25px 29px 20px 17px;
@@ -214,7 +264,17 @@ color: #000000;
     line-height: 19px;
     background: #ffffff;
     margin: 48px auto 95px;
-    }
+    cursor: pointer var(--dark-pink-color);
+    outline: none;
+}
+.products__button:active{
+    background: var(--dark-pink-color);
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    outline: none;
+
+}
+
 
 
 .features{
@@ -354,9 +414,118 @@ font-style: italic;
     display: block;   
 }
 
+.footer__subscribe-form-input{
+    width: 256px;
+    height: 46px;
+    background:  #E1E1E1;
+    border-radius: 23px 0 0 24px;
+    border: none;
+    outline: none;
+    padding-left: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+.footer__subscribe-form-button{
+    width: 100px;
+    height: 48px;
+    background: var(--dark-pink-color);
+    color: var(--white-color);
+    border-radius: 0 24px 24px 0;
+    border: none;
+    outline: none;
+font-size: 14px;
+font-weight: 400;
+line-height: 17px;
+}
+
 
 .footer__subscribe-form-email {
-    padding-top: 32px;
+    padding-top: 34px;
     display: flex;
     align-items: center;
+}
+
+.registration__breadcrumb{
+    min-height: 148px;
+    background: #F8F3F4;
+    display: flex;
+    align-items: center;
+
+}
+.registration__title{
+font-size: 24px;
+font-weight: 400;
+line-height: 29px;
+color: var(--dark-pink-color);
+text-transform: uppercase;
+
+}
+.registration__content{
+   background: #FFFFFF;
+   display: flex;
+   margin: 64px auto 0;
+   justify-content: space-between;
+}
+
+.registration__form{
+    max-width: 360px;
+
+}
+.registration__perk{
+    width: 652px;
+font-size: 24px;
+font-weight: 300;
+line-height: 29px;
+}
+
+.registration__perk-title{
+    text-transform: uppercase;
+}
+
+.registration__perk-text{
+    margin: 22px auto;
+}
+.registration__form-title{
+font-size: 16px;
+font-weight: 300;
+line-height: 19px;
+text-align: left;
+padding: 34px auto 0;
+}
+
+.registrartion__field{
+    margin: 20px 0 0;
+    border: 1px solid #A4A4A4;
+    width: 358px;
+    height: 45px;
+}
+.registration__form-text{
+    color:  #B1B1B1;
+font-size: 13px;
+padding: 15px 0 0;
+}
+
+.registration__perk-list{
+    list-style-position: inside;
+    list-style-image: url(..//img/v-registration.svg);
+}
+.registration__perk-item{
+    margin: 16px auto 0;
+}
+.registration__buttom{
+    height: 50px;
+width: 167px;
+background: var(--dark-pink-color);
+color: var(--white-color);
+border: none;
+text-align:center;
+margin: 39px auto 96px;
+}
+
+.registration__gender{
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 13px;
+    margin: 33px auto 33px;    
 }
