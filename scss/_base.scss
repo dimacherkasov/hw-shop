@@ -6,8 +6,9 @@ body {
     line-height: 17px;
 }
 
+
 .container {
-    width: 1140px;
+    width: 71%;
     margin: 0 auto;
 }
 
@@ -20,4 +21,10 @@ body {
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0)
+}
+
+@media (max-width: $desktop-width) {
+    .container {
+        width: 96%;
+    }
 }

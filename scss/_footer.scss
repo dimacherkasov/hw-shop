@@ -1,143 +1,173 @@
-.footer__bottom {
-    min-height: 79px;
-    background-color: $black-color;
-}
+.footer {
 
-.footer__copyright {
-    min-height: 79px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    &__bottom {
+        min-height: 79px;
+        background-color: $black-color;
+    }
 
-.footer__copyright-text {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    color: $white-color;
-}
+    &__copyright {
+        min-height: 79px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-.footer__copyright-link {
-    display: flex;
-    justify-content: space-around;
-    min-width: 148px;
-}
+        @include mobile{
+            flex-direction: column-reverse;
+            min-height: 143px;
+            justify-content: space-around;
+        }
+    }
 
-.footer__copyright-link-facebook {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    background: #ffffff;
-}
+    &__copyright-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $white-color;
+    }
 
-.footer__copyright-link-instagram {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    background: $dark-pink-color
-}
+    &__links {
+        display: flex;
+        justify-content: space-around;
+        min-width: 148px;
+    }
 
-.footer__copyright-link-pinterest {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    background: #ffffff;
-}
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        background-color: #ffffff;
 
-.footer__copyright-link-twitter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    background: #ffffff;
-}
+        &:hover {
+            background-color: $pink-color;
+        }
 
-.footer__subscribe {
-    background: url(../img/subscribe.jpg) no-repeat center;
-}
+        &:hover .footer__link-icon {
+            fill: $dark-pink-color;
+        }
+    }
 
-.footer__content {
-    min-height: 448px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    &__link--instagram {
+        background: $dark-pink-color;
+    }
 
-.footer__subscribe-content {
-    max-width: 360px;
-    min-height: 225px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-}
+    &__link-icon--instagram {
+        fill: $white-color
+    }
 
-.footer__subscribe-text {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    color: $black-color;
-    text-align: center;
-}
+    &__subscribe {
+        background: url(../img/subscribe.jpg) no-repeat center;
 
-.footer__subscribe-sub-text {
-    font-style: italic;
-}
+        @include tablet {
+            background-position: bottom;
+        }
+    }
 
+    &__content {
+        min-height: 448px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-.footer__subscribe-form-title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 38px;
-    text-align: center;
-    text-transform: uppercase;
-}
+        @include tablet {
+            flex-direction: column;
+            justify-content: space-around;
+            min-height: 693px;
+        }
 
-.footer__subscribe-form-sub-title {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    display: block;
-}
+        @include mobile {
+            min-height: 550px;
+        }
+    }
 
-.footer__subscribe-form-input {
-    width: 256px;
-    height: 46px;
-    background: #E1E1E1;
-    border-radius: 23px 0 0 24px;
-    border: none;
-    outline: none;
-    padding-left: 24px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-}
+    &__subscribe-content {
+        max-width: 360px;
+        min-height: 225px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.footer__subscribe-form-button {
-    width: 100px;
-    height: 48px;
-    background: $dark-pink-color;
-    color: $white-color;
-    border-radius: 0 24px 24px 0;
-    border: none;
-    outline: none;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-}
+    &__subscribe-text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $black-color;
+        text-align: center;
+
+        @include mobile {
+            font-size: 19px;
+            line-height: 23px;
 
 
-.footer__subscribe-form-email {
-    padding-top: 34px;
-    display: flex;
-    align-items: center;
+        }
+    }
+
+    &__subscribe-sub-text {
+        font-style: italic;
+    }
+
+
+    &__subscribe-form-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 38px;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include mobile {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+
+    &__subscribe-form-sub-title {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        display: block;
+
+        @include mobile{
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+
+    &__subscribe-form-input {
+        width: 256px;
+        height: 46px;
+        background: #E1E1E1;
+        border-radius: 23px 0 0 24px;
+        border: none;
+        outline: none;
+        padding-left: 24px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    &__subscribe-form-button {
+        width: 100px;
+        height: 48px;
+        background: $dark-pink-color;
+        color: $white-color;
+        border-radius: 0 24px 24px 0;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+
+    &__subscribe-form-email {
+        padding-top: 34px;
+        display: flex;
+        align-items: center;
+    }
+
 }
