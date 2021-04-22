@@ -1,0 +1,41 @@
+.header {
+    background-color: $black-color;
+
+    &__navigation {
+        position: absolute;
+        height: 765px;
+        width: 235px;
+        top: 75px;
+        right: 0;
+        background: white;
+        display: none;
+    }
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 75px;
+    }
+    
+    &__logo {
+        margin: 0 41px 0 0;
+    }
+    
+    &__button {
+        background: transparent;
+        border: none;
+        margin: 0 33px 0 0;
+        :active .header__navigation {
+            display: block;
+        }
+        :hover .header__navigation {
+            display: block;
+        }
+    }
+    
+    &__person {
+        margin: 0 33px 0 0;
+    }
+}
+
