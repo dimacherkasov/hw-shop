@@ -827,7 +827,7 @@ body {
   color: #FBFBFB;
 }
 
-.registration__breadcrumb {
+.registrartion__breadcrumb {
   min-height: 148px;
   background: #F8F3F4;
   display: -webkit-box;
@@ -838,7 +838,7 @@ body {
           align-items: center;
 }
 
-.registration__title {
+.registrartion__title {
   font-size: 24px;
   font-weight: 400;
   line-height: 29px;
@@ -846,7 +846,7 @@ body {
   text-transform: uppercase;
 }
 
-.registration__content {
+.registrartion__content {
   background: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -857,26 +857,26 @@ body {
           justify-content: space-between;
 }
 
-.registration__form {
+.registrartion__form {
   max-width: 360px;
 }
 
-.registration__perk {
+.registrartion__perk {
   width: 652px;
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
 }
 
-.registration__perk-title {
+.registrartion__perk-title {
   text-transform: uppercase;
 }
 
-.registration__perk-text {
+.registrartion__perk-text {
   margin: 22px auto;
 }
 
-.registration__form-title {
+.registrartion__form-title {
   font-size: 16px;
   font-weight: 300;
   line-height: 19px;
@@ -891,22 +891,22 @@ body {
   height: 45px;
 }
 
-.registration__form-text {
+.registrartion__form-text {
   color: #B1B1B1;
   font-size: 13px;
   padding: 15px 0 0;
 }
 
-.registration__perk-list {
+.registrartion__perk-list {
   list-style-position: inside;
   list-style-image: url(..//img/v-registration.svg);
 }
 
-.registration__perk-item {
+.registrartion__perk-item {
   margin: 16px auto 0;
 }
 
-.registration__buttom {
+.registrartion__buttom {
   height: 50px;
   width: 167px;
   background: #F16D7F;
@@ -916,7 +916,7 @@ body {
   margin: 39px auto 96px;
 }
 
-.registration__gender {
+.registrartion__gender {
   font-size: 11px;
   font-weight: 300;
   line-height: 13px;
